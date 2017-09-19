@@ -2,7 +2,7 @@
 ## Contenido
  Este proyecto contiene el material del curso de Automatización de pruebas Web utilizando [Selenium](http://seleniumhq.org).  
 
-* Diapositivas
+* Diapositivas del modulo
 * Ejercicios
  - Resueltos
  - De clase
