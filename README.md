@@ -15,4 +15,5 @@ Los requerimientos de software son minimos, y constan de:
 * Complemento de [Selenium IDE](https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/)
 * [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/)
 * Google [Chrome](https://www.google.com/chrome/browser/features.html)
+* Instalar [Selenium IDE para Chrome](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
 * Instalar [GIT](https://git-scm.com/book/es/v1/Empezando-Instalando-Git)
