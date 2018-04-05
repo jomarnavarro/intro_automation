@@ -17,6 +17,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertElementPresent</td>
+	<td>id=uh-search-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=uh-search-box</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=uh-search-box</td>
 	<td>IMDb</td>
@@ -28,12 +38,17 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>link=IMDb - Official Site</td>
+	<td>link=IMDb - Movies, TV and Celebrities - IMDb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=IMDb - Movies, TV and Celebrities - IMDb</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=IMDb - Official Site</td>
+	<td>link=IMDb - Movies, TV and Celebrities - IMDb</td>
 	<td></td>
 </tr>
 <tr>
@@ -42,7 +57,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectPopUpAndWait</td>
+	<td>selectWindow</td>
 	<td>IMDb - Movies, TV and Celebrities - IMDb</td>
 	<td></td>
 </tr>
@@ -72,7 +87,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
+	<td>assertTextPresent</td>
 	<td>One Day</td>
 	<td></td>
 </tr>
@@ -89,6 +104,11 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>link=One Day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='title-overview-widget']/div[2]/div[3]/div[2]/a</td>
 	<td></td>
 </tr>
 <tr>
