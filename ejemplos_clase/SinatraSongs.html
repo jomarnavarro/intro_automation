@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://songs-by-sinatra.herokuapp.com" />
+<title>SinatraSongs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SinatraSongs</td></tr>
+</thead><tbody>
+
+      <tr>
+        <td>open</td>
+        <td>/</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>link=log in</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=username</td>
+        <td>frank</td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=password</td>
+        <td>sinatra</td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>//input[@value="Log In"]</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>link=Songs</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>link=Create a new song</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=title</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=title</td>
+        <td>Lo que un dia fue no sera</td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=length</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=length</td>
+        <td>223</td>
+      </tr>
+    
+
+      <tr>
+        <td>click</td>
+        <td>id=released_on</td>
+        <td></td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=released_on</td>
+        <td>12/23/1980</td>
+      </tr>
+    
+
+      <tr>
+        <td>type</td>
+        <td>id=lyrics</td>
+        <td>Lo oque un dia fue, no sera, ya no vengas a buscarme.</td>
+      </tr>
+    
+
+      <tr>
+        <td>clickAndWait</td>
+        <td>//input[@value="Save Song"]</td>
+        <td></td>
+      </tr>
+    
+</tbody></table>
+<script>
+(function() {
+  try {
+    var evt = new CustomEvent('kantuSaveAndRunMacro', { detail: { html: document.documentElement.outerHTML } })  
+    window.dispatchEvent(evt);
+    
+    if (window.location.protocol === 'file:') {
+      var onInvokeSuccess = function () {
+        clearTimeout(timer)
+        window.removeEventListener('kantuInvokeSuccess', onInvokeSuccess)
+      }
+      var timer = setTimeout(function () {
+        alert("Error: It seems you need to enable File Access for Kantu in the extension settings.")
+      }, 2000)
+
+      window.addEventListener('kantuInvokeSuccess', onInvokeSuccess)
+    }
+  } catch (e) {
+    alert('Kantu Bookmarklet error: ' + e.toString());
+  }
+})();
+</script>
+</body>
+</html>
+  
