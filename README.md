@@ -11,9 +11,6 @@
 ## Requisitos de software
 Los requerimientos de software son minimos, y constan de:
 
-* Navegador [Firefox](https://ftp.mozilla.org/pub/firefox/releases/53.0.3/).  Para evitar que el navegador se actualice a la ultima version, ver las instrucciones en el archivo configuracion_firefox.md
-* Complemento de [Selenium IDE](https://addons.mozilla.org/es/firefox/addon/selenium-ide/versions/)
-* [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/)
-* Google [Chrome](https://www.google.com/chrome/browser/features.html)
-* Instalar [Selenium IDE para Chrome](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
+* Navegador [Chrome](https://www.google.com/chrome/).
+* Complemento de [Kantu for Chrome](https://chrome.google.com/webstore/detail/kantu-%F0%9F%A4%96-fresh-web-automa/gcbalfbdmfieckjlnblleoemohcganoc).  [Documentacion].(https://a9t9.com/kantu/web-automation/chrome)
 * Instalar [GIT](https://git-scm.com/book/es/v1/Empezando-Instalando-Git)
