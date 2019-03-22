@@ -1,0 +1,107 @@
+{
+  "id": "54310bfc-2760-46a0-8c01-f9255bd0466b",
+  "version": "2.0",
+  "name": "SinatraSongs",
+  "url": "http://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "22454b67-64e9-466a-a840-ef0c29ae215b",
+    "name": "Sinatra Like First Song",
+    "commands": [{
+      "id": "74e542d0-0b46-457a-adbb-7d75272f75d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "723336d6-4273-411d-89fd-c7090ab32b1a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f0e2b14-e0c6-4a31-a8c1-c6752e7b4d99",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Songs",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "265e759e-8eed-49e0-b266-e7e7a1de94bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1471f52-cd89-40cf-a7b2-4fc8fed1aa2d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=songs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94266d2d-6fd9-4c48-a0bf-a0b0469c32e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.main > h1",
+      "targets": [
+        ["css=.main > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"]
+      ],
+      "value": "Songs"
+    }, {
+      "id": "efd209f7-2dad-4a9d-a3b1-fa381f120994",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Way",
+      "targets": [
+        ["linkText=My Way", "linkText"],
+        ["css=#songs > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Way')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/1')]", "xpath:href"],
+        ["xpath=//section/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Way')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ccdeee1-8a5c-4496-a848-0f0c37c4d477",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51052acb-479c-4c76-9f8d-b0eb95eba174",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Like']", "xpath:attributes"],
+        ["xpath=//div[@id='like']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b3bdab3-13ca-448d-856d-1ebe7957a73f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["22454b67-64e9-466a-a840-ef0c29ae215b"]
+  }],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
