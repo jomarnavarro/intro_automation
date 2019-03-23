@@ -21,12 +21,19 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "7f0e2b14-e0c6-4a31-a8c1-c6752e7b4d99",
+      "id": "72c63f91-20d7-4550-8590-35c4d69553d3",
       "comment": "",
       "command": "waitForElementPresent",
       "target": "linkText=Songs",
       "targets": [],
       "value": "5000"
+    }, {
+      "id": "7f0e2b14-e0c6-4a31-a8c1-c6752e7b4d99",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Songs",
+      "targets": [],
+      "value": ""
     }, {
       "id": "265e759e-8eed-49e0-b266-e7e7a1de94bc",
       "comment": "",
