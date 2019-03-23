@@ -1,16 +1,27 @@
-# Introduccion a la Automatizacion con Selenium
+# Introduccion a la Automatizacion con Selenium IDE
 ## Contenido
  Este proyecto contiene el material del curso de Automatización de pruebas Web utilizando [Selenium](http://seleniumhq.org).  
 
-* Diapositivas del modulo
+* Presentacion del modulo
+ - Vision general de la automatizacion
+ - Vision general de Selenium
+ - Repaso basico de HTML
+ - Selenium IDE y comandos
+ - Git
+ - Github
+ - Trello
+ 
 * Ejercicios
  - Resueltos
  - De clase
  - De tarea
+ - Un [board de Trello](http://seleniumhq.org).
 
 ## Requisitos de software
 Los requerimientos de software son minimos, y constan de:
 
 * Navegador [Chrome](https://www.google.com/chrome/).
-* Complemento de [Kantu for Chrome](https://chrome.google.com/webstore/detail/kantu-%F0%9F%A4%96-fresh-web-automa/gcbalfbdmfieckjlnblleoemohcganoc).  [Documentacion].(https://a9t9.com/kantu/web-automation/chrome)
+* Plugin [Selenium IDE](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=en).
 * Instalar [GIT](https://git-scm.com/book/es/v1/Empezando-Instalando-Git)
+* Obtener cuenta de [GitHub](https://github.com/)
+* Obtener cuenta de [Trello](https://trello.com)
