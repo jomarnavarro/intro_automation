@@ -1,0 +1,118 @@
+{
+  "id": "87f396f3-fd99-4c83-9b4f-39e16c81ce3d",
+  "version": "2.0",
+  "name": "Sinatra",
+  "url": "http://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "271e6254-9670-4c6e-b6de-4d1cd9fa8976",
+    "name": "LikeSong",
+    "commands": [{
+      "id": "4857e725-e018-4bec-966c-20ef403df0cf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebcecf6b-b7f8-4b28-8731-1eb4a3a01ba6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b451c7c4-b607-4155-ab61-8b1f8313a3dd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Songs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6168c61-335c-4832-973f-367b422351ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb864a7d-add4-4bbd-8514-06764948d971",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Songs",
+      "targets": [],
+      "value": "Songs"
+    }, {
+      "id": "4043f79b-e05a-4afe-a391-ff320d47e8f1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=songs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3822445a-1c92-4f4b-9f41-c35a4fa73fa3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@id='songs']//a",
+      "targets": [
+        ["linkText=Lo que un dia fue no sera", "linkText"],
+        ["css=#songs > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lo que un dia fue no sera')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/7')]", "xpath:href"],
+        ["xpath=//section/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lo que un dia fue no sera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9271559-eb35-44ac-9788-ca3e36ea1b9c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//section/h1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15c41949-f763-4f0b-a27e-a2a6af6f3a69",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//section/p",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "035e803b-9997-4677-8ab0-f96395e861ed",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=input",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "63980764-f9a7-4ed4-a5d7-64d57d5bd00e",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Like']", "xpath:attributes"],
+        ["xpath=//div[@id='like']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "296b3e3d-5398-4399-9a71-d8576bac1e6a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["271e6254-9670-4c6e-b6de-4d1cd9fa8976"]
+  }],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
