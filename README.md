@@ -25,3 +25,5 @@ Los requerimientos de software son minimos, y constan de:
 * Instalar [GIT](https://git-scm.com/book/es/v1/Empezando-Instalando-Git)
 * Obtener cuenta de [GitHub](https://github.com/)
 * Obtener cuenta de [Trello](https://trello.com)
+
+# Texto de prueba0
