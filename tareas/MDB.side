@@ -1,0 +1,331 @@
+{
+  "id": "14607110-a501-44d8-a503-f6125e7436a3",
+  "version": "2.0",
+  "name": "MDB",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "11fd9ac1-f4fb-4242-a0ac-f95aaa288c79",
+    "name": "Registro",
+    "commands": [{
+      "id": "9cabeccf-05e5-4e5a-a6ff-2c3e8c8b27d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87f83865-83a0-4686-b003-239d0e685871",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "949x735",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7597cba-ae48-467d-b29f-bfd3f24d3802",
+      "comment": "",
+      "command": "click",
+      "target": "id=imdb-signin-link",
+      "targets": [
+        ["css=.signin-imdb-text", "css:finder"],
+        ["xpath=//a[@id='imdb-signin-link']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "261ee33f-f427-4888-8eb4-590643b813b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create a New Account",
+      "targets": [
+        ["linkText=Create a New Account", "linkText"],
+        ["css=.create-account", "css:finder"],
+        ["xpath=//a[contains(text(),'Create a New Account')]", "xpath:link"],
+        ["xpath=//div[@id='signin-options']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.imdb.com/ap/register?openid.return_to=https%3A%2F%2Fwww.imdb.com%2Fap-signin-handler&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=imdb_us&openid.mode=checkid_setup&siteState=eyJvcGVuaWQuYXNzb2NfaGFuZGxlIjoiaW1kYl91cyIsInJlZGlyZWN0VG8iOiJodHRwczovL3d3dy5pbWRiLmNvbS8_cmVmXz1sb2dpbiJ9&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&tag=imdbtag_reg-20')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create a New Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c60e9c8-79c8-41b7-bcbe-5de58abea740",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_customer_name",
+      "targets": [
+        ["id=ap_customer_name", "id"],
+        ["name=customerName", "name"],
+        ["css=#ap_customer_name", "css:finder"],
+        ["xpath=//input[@id='ap_customer_name']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Deissy Herrera"
+    }, {
+      "id": "b1f5d628-6dd6-406e-bba5-b073da2354c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56e0c22f-b3d4-4c0d-9e42-bda176a96d39",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "deluhedu@gmail.com"
+    }, {
+      "id": "f0bc8153-d22c-476d-89ca-6d00afdb423e",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e02e6f-e6b1-48cc-a69f-5e4d620911e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "test1234."
+    }, {
+      "id": "6c9a7b14-758e-44e2-97e3-bdfeb616501d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password_check",
+      "targets": [
+        ["id=ap_password_check", "id"],
+        ["name=passwordCheck", "name"],
+        ["css=#ap_password_check", "css:finder"],
+        ["xpath=//input[@id='ap_password_check']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "331c02d9-56a0-40a8-8eb2-3e90ac710dfc",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password_check",
+      "targets": [
+        ["id=ap_password_check", "id"],
+        ["name=passwordCheck", "name"],
+        ["css=#ap_password_check", "css:finder"],
+        ["xpath=//input[@id='ap_password_check']", "xpath:attributes"],
+        ["xpath=//form[@id='ap_register_form']/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test1234."
+    }, {
+      "id": "5880786f-6bb3-4e51-8c80-3b442704623e",
+      "comment": "",
+      "command": "click",
+      "target": "id=continue",
+      "targets": [
+        ["id=continue", "id"],
+        ["css=#continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-0']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c08f7e4-a002-4791-9cb0-c35db918cd13",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=nbusername",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "ff582a93-84cf-4124-b844-315ed001a05e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nbusername",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3b7c871c-54e0-431e-aa60-b9d107f6fe15",
+    "name": "Buscar Película ",
+    "commands": [{
+      "id": "bda95b65-2994-4261-b54e-5ac9cf7124ec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32ef4f91-6c5d-4f05-82bf-d279921f99cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "950x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fab8321a-497b-4cf8-9fe4-075267ea917c",
+      "comment": "",
+      "command": "click",
+      "target": "id=quicksearch",
+      "targets": [
+        ["id=quicksearch", "id"],
+        ["name=s", "name"],
+        ["css=#quicksearch", "css:finder"],
+        ["xpath=//select[@id='quicksearch']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce2dbd6e-9531-43cf-9c54-89e89f649f55",
+      "comment": "",
+      "command": "select",
+      "target": "id=quicksearch",
+      "targets": [],
+      "value": "label=Titles"
+    }, {
+      "id": "042ad751-2a6e-4297-bda5-43c27f528b35",
+      "comment": "",
+      "command": "click",
+      "target": "id=quicksearch",
+      "targets": [
+        ["id=quicksearch", "id"],
+        ["name=s", "name"],
+        ["css=#quicksearch", "css:finder"],
+        ["xpath=//select[@id='quicksearch']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a0ea228-b51a-4356-a6ae-0253d53d95c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48fe5555-d7bd-4d40-82e6-b13a707248d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "avengers"
+    }, {
+      "id": "31e8bbb5-96a1-4967-b65e-1d9fa1fea13a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cec25d87-cb40-451d-a475-500da964c1f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Los vengadores",
+      "targets": [
+        ["linkText=Los vengadores", "linkText"],
+        ["css=.findResult:nth-child(1) > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Los vengadores')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0848228/?ref_=fn_tt_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Los vengadores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3180072-16a7-4ae9-953e-54c38869f90f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi1891149081?playlistId=tt0848228&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89bd66ef-d86a-4a70-be53-174dc96f60cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[9]/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e913977-1b08-4e42-8aa8-fa43c6ee894d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close-button",
+      "targets": [
+        ["css=.close-button", "css:finder"],
+        ["xpath=//div[@id='video-container']/div/div[2]/div/div/div/div/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/div/div/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5397290e-31cf-481c-bfc0-0a78149709e9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11fd9ac1-f4fb-4242-a0ac-f95aaa288c79"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
