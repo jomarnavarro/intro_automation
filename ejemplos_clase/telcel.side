@@ -1,0 +1,78 @@
+{
+  "id": "8bd65c04-9afd-4b62-920a-b8de08e92edb",
+  "version": "2.0",
+  "name": "telcel",
+  "url": "https://www.telcel.com",
+  "tests": [{
+    "id": "0739d383-fe6e-4246-828d-c6840df8681c",
+    "name": "click menu dinamico",
+    "commands": [{
+      "id": "b5c64527-fb83-4120-acdc-42e234dd292e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd142d39-0daa-44f3-ad1d-d2544ab8f3a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1005x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f876fc5-5923-4b30-b2b2-57d6aeffba2e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=telcel-menu-principal-boton",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46160670-8b3c-4fb7-90d9-5dd5bb981aaf",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Experiencias",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "8e6f38f8-b7cb-443b-afd4-9c102b2ced19",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Experiencias",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48d79306-cecb-4f86-9c62-fe3a76f091ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Experiencias",
+      "targets": [
+        ["linkText=Planes de Renta", "linkText"],
+        ["css=.hover-menu > .black-mobile", "css:finder"],
+        ["xpath=//a[contains(text(),'Planes de Renta')]", "xpath:link"],
+        ["xpath=//ul[@id='level-1']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/personas/telefonia/planes-de-renta/todavia-no-tienes-plan#!descubre-tu-plan-ideal')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Planes de Renta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02eec5c0-ad85-4fa0-bfb4-7219554fe39f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "27275c55-d70e-4f45-88de-1ff3ade90e0c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0739d383-fe6e-4246-828d-c6840df8681c"]
+  }],
+  "urls": ["https://www.telcel.com/"],
+  "plugins": []
+}
