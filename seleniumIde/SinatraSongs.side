@@ -2,7 +2,7 @@
   "id": "54310bfc-2760-46a0-8c01-f9255bd0466b",
   "version": "2.0",
   "name": "SinatraSongs",
-  "url": "http://songs-by-sinatra.herokuapp.com",
+  "url": "https://sinatra-internet-songbase.herokuapp.com/",
   "tests": [{
     "id": "22454b67-64e9-466a-a840-ef0c29ae215b",
     "name": "Sinatra Like First Song",
@@ -59,7 +59,7 @@
       "id": "94266d2d-6fd9-4c48-a0bf-a0b0469c32e2",
       "comment": "",
       "command": "assertText",
-      "target": "css=.main > h1",
+      "target": "xpath=//section/h1",
       "targets": [
         ["css=.main > h1", "css:finder"],
         ["xpath=//section/h1", "xpath:position"]
@@ -109,6 +109,6 @@
     "timeout": 300,
     "tests": ["22454b67-64e9-466a-a840-ef0c29ae215b"]
   }],
-  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/", "https://sinatra-internet-songbase.herokuapp.com/"],
   "plugins": []
 }

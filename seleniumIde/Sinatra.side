@@ -2,7 +2,7 @@
   "id": "87f396f3-fd99-4c83-9b4f-39e16c81ce3d",
   "version": "2.0",
   "name": "Sinatra",
-  "url": "http://songs-by-sinatra.herokuapp.com",
+  "url": "https://sinatra-internet-songbase.herokuapp.com/",
   "tests": [{
     "id": "271e6254-9670-4c6e-b6de-4d1cd9fa8976",
     "name": "LikeSong",
@@ -113,6 +113,6 @@
     "timeout": 300,
     "tests": ["271e6254-9670-4c6e-b6de-4d1cd9fa8976"]
   }],
-  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/", "https://sinatra-internet-songbase.herokuapp.com/"],
   "plugins": []
 }

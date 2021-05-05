@@ -2,7 +2,7 @@
   "id": "13ad9b05-cbb5-4902-ba48-d5ab6a826596",
   "version": "2.0",
   "name": "test",
-  "url": "https://songs-by-sinatra.herokuapp.com",
+  "url": "https://sinatra-internet-songbase.herokuapp.com/",
   "tests": [{
     "id": "18a17882-a4b3-4049-81f5-c9177c39463e",
     "name": "loginSinatra",
@@ -94,6 +94,6 @@
     "timeout": 300,
     "tests": ["18a17882-a4b3-4049-81f5-c9177c39463e"]
   }],
-  "urls": ["https://songs-by-sinatra.herokuapp.com/"],
+  "urls": ["https://songs-by-sinatra.herokuapp.com/", "https://sinatra-internet-songbase.herokuapp.com/"],
   "plugins": []
 }
