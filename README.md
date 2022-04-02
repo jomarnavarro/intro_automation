@@ -1,9 +1,10 @@
 # Introduccion a la Automatizacion con Selenium IDE
 ## Contenido
- Este proyecto contiene el material del curso de Automatización de pruebas Web utilizando [Selenium](http://selenium.dev).  Ilustra el proceso de Automatización utilizando la herramienta de Record and Play [Selenium IDE](.https://www.selenium.dev/selenium-ide/)
+ Este proyecto contiene el material del curso de Programacion para Automatización de Procesos de Negocio utilizando [Selenium](http://selenium.dev).  Ilustra el proceso de Automatización utilizando la herramienta de Record and Play [Selenium IDE](.https://www.selenium.dev/selenium-ide/)
 
 * Presentacion del modulo
  - Visión general de la automatización
+ - Proceso de Automatizacion.
  - Visión general de Selenium
  - Selenium IDE y comandos
 
